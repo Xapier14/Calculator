@@ -3,6 +3,6 @@ var ceruleanApi = CeruleanAPI.GetAPI()
                              .UseConsoleLogger()
                              .Initialize();
 
-var window = ceruleanApi.CreateWindow("ExampleLayout");
+var window = ceruleanApi.CreateWindow("MainLayout", "Calculator App");
 
 ceruleanApi.WaitForAllWindowsClosed(true);
