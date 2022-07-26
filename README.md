@@ -1,6 +1,8 @@
 # Simple Calculator App
 
-Written as a sample Cerulean UI app to demonstrate Grids, Panels, Label and Buttons.
+![Screenshot](.github/Assets/Images/calculator.png)
+
+Written as a sample Cerulean UI app to demonstrate Grids, Panels, Labels and Buttons.
 
 ## Requirements
 
