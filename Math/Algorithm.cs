@@ -10,9 +10,6 @@ namespace Calculator.Mathematics
     {
         /// <summary>
         /// Tokenizes an expression string
-        /// Best Case: O(n)
-        /// Average Case: O(n)
-        /// Worst Case: O(n)
         /// </summary>
         /// <param name="expression">the expression string</param>
         /// <returns>list of tokens</returns>
@@ -114,9 +111,6 @@ namespace Calculator.Mathematics
         /// <summary>
         /// Dijkstra's Shunting-Yard Algorithm
         /// Converts an infix expression to postfix notation
-        /// Best Case: O(n)
-        /// Average Case: O(n)
-        /// Worst Case: O(n^2)
         /// </summary>
         /// <param name="infixTokens">List of tokens in ifix notation</param>
         /// <returns>A list of tokens in postfix notation</returns>
@@ -184,9 +178,6 @@ namespace Calculator.Mathematics
 
         /// <summary>
         /// Evaluates a list of tokens in postfix notation
-        /// Best Case: O(n)
-        /// Average Case: O(n)
-        /// Worst Case: O(n)
         /// </summary>
         /// <param name="postfixExpression">List of tokens in postfix notation</param>
         /// <returns>The evaluated result</returns>
