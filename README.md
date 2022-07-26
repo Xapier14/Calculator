@@ -31,12 +31,12 @@ Written as a sample Cerulean UI app to demonstrate Grids, Panels, Labels and But
 ## Layout Tree
 
 - MainLayout (Layout)
-  - ResponsiveGrid (Grid)
-    - BaseGrid (Grid)
+  - ResponsiveGrid (Grid [3x3])
+    - BaseGrid (Grid [1x2])
       - DisplayPanel (Panel)
         - DisplayLabel (Label)
-      - ButtonGrid (Grid)
-        - OperationsGrid (Grid)
+      - ButtonGrid (Grid [4x5])
+        - OperationsGrid (Grid [4x1])
           - ButtonAddition (Button)
           - ButtonSubtraction (Button)
           - ButtonMultiplication (Button)
@@ -50,9 +50,12 @@ Written as a sample Cerulean UI app to demonstrate Grids, Panels, Labels and But
         - Button3 (Button)
         - Button2 (Button)
         - Button1 (Button)
-        - ButtonClear (Button)
         - Button0 (Button)
+        - ButtonClear (Button)
         - ButtonEval (Button)
+        - ButtonOpenParenthesis (Button)
+        - ButtonCloseParenthesis (Button)
+        - ButtonPeriod (Button)
 
 > ResponsiveGrid has a fixed column[1] width of 512 and a fixed row[1] height of 512.
 
