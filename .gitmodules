@@ -1,0 +1,3 @@
+[submodule "Cerulean"]
+	path = Cerulean
+	url = https://github.com/Xapier14/Cerulean.git
