@@ -1,5 +1,6 @@
 .cerulean/
 .sdl2-bin/
+.vscode/
 bin/
 obj/
 scripts/

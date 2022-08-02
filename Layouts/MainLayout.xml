@@ -1,6 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <CeruleanXML xmlns:a='Attribute'>
   <Import>Cerulean.Components</Import>
+
+  <!-- Styles -->
+  <Style Name='Style_DefaultButton' Target='Button' ApplyToChildren='true'>
+    <Setter Name='ForeColor' Value='#000' />
+    <Setter Name='BackColor' Value='#AAA' />
+    <Setter Name='BorderColor' Value='#000' />
+    <Setter Name='HighlightColor' Value='#BB6' />
+    <Setter Name='ActivatedColor' Value='#883' />
+    <Setter Name='FontSize' Value='24' />
+  </Style>
+  <Style Name='Style_ClearButton' Target='Button' From='Style_DefaultButton'>
+    <Setter Name='BackColor' Value='#ff9d94' />
+  </Style>
+  <Style Name='Style_EvalButton' Target='Button' From='Style_DefaultButton'>
+    <Setter Name='BackColor' Value='#fcae60' />
+    <Setter Name='FontSize' Value='32' />
+  </Style>
+
+  <!-- Layouts -->
   <Layout Name='MainLayout'>
     <Grid Name='ResponsiveGrid' RowCount='3' ColumnCount='3' BackColor="#111">
       <Grid Name='BaseGrid' RowCount='2' ColumnCount='1' GridColumn='1' GridRow='1' BackColor="#222">
@@ -10,72 +29,72 @@
         </Panel>
 
         <!-- Input Buttons -->
-        <Grid Name='ButtonGrid' RowCount='5' ColumnCount='4' GridRow='1'>
+        <Grid RowCount='5' ColumnCount='4' GridRow='1' Style='Style_DefaultButton'>
 
           <!-- Operators Group -->
-          <Grid Name='OperationsGrid' GridColumnSpan='4' ColumnCount='4'>
-            <Button Name='ButtonAddition' GridColumn='0' Text='+' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Grid GridColumnSpan='4' ColumnCount='4'>
+            <Button GridColumn='0' Text='+'>
               <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
             </Button>
-            <Button Name='ButtonSubtraction' GridColumn='1' Text='-' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+            <Button GridColumn='1' Text='-'>
               <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
             </Button>
-            <Button Name='ButtonMultiplication' GridColumn='2' Text='*' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+            <Button GridColumn='2' Text='*'>
               <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
             </Button>
-            <Button Name='ButtonDivision' GridColumn='3' Text='/' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+            <Button GridColumn='3' Text='/'>
               <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
             </Button>
           </Grid>
 
           <!-- Number Buttons -->
-          <Button Name='Button9' GridRow='1' GridColumn='2' Text='9' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='1' GridColumn='2' Text='9'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button8' GridRow='1' GridColumn='1' Text='8' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='1' GridColumn='1' Text='8'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button7' GridRow='1' GridColumn='0' Text='7' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='1' GridColumn='0' Text='7'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button6' GridRow='2' GridColumn='2' Text='6' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='2' GridColumn='2' Text='6'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button5' GridRow='2' GridColumn='1' Text='5' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='2' GridColumn='1' Text='5'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button4' GridRow='2' GridColumn='0' Text='4' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='2' GridColumn='0' Text='4'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button3' GridRow='3' GridColumn='2' Text='3' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='3' GridColumn='2' Text='3'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button2' GridRow='3' GridColumn='1' Text='2' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='3' GridColumn='1' Text='2'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button1' GridRow='3' GridColumn='0' Text='1' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='3' GridColumn='0' Text='1'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='Button0' GridRow='4' GridColumn='1' Text='0' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='4' GridColumn='1' Text='0'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
 
           <!-- Action Buttons -->
-          <Button Name='ButtonClear' GridRow='4' GridColumn='0' Text='CLEAR' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='4' GridColumn='0' Text='CLR' Style='Style_ClearButton'>
             <Event Name='OnClick' Handler='ButtonClear_OnClick' />
           </Button>
-          <Button Name='ButtonEval' GridRow='3' GridColumn='3' GridRowSpan='2' Text='=' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='3' GridColumn='3' GridRowSpan='2' Text='=' Style='Style_EvalButton'>
             <Event Name='OnClick' Handler='ButtonEval_OnClick' />
           </Button>
 
           <!-- Special Buttons -->
-          <Button Name='ButtonOpenParenthesis' GridRow='1' GridColumn='3' Text='(' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='1' GridColumn='3' Text='('>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='ButtonCloseParenthesis' GridRow='2' GridColumn='3' Text=')' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='2' GridColumn='3' Text=')'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
-          <Button Name='ButtonPeriod' GridRow='4' GridColumn='2' Text='.' ForeColor='#000' BackColor='#AAA' BorderColor='#000' HighlightColor='color: #BB6' ActivatedColor='color: #883'>
+          <Button GridRow='4' GridColumn='2' Text='.'>
             <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
           </Button>
         </Grid>
