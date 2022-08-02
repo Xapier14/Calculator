@@ -2,7 +2,7 @@
 
 ![Screenshot](.github/Assets/Images/calculator.png)
 
-Written as a sample Cerulean UI app to demonstrate Grids, Panels, Labels and Buttons.
+Written as a sample Cerulean UI app to demonstrate Layouts, Styles, Grids, Panels, Labels and Buttons.
 
 ## Requirements
 
@@ -60,3 +60,5 @@ Written as a sample Cerulean UI app to demonstrate Grids, Panels, Labels and But
 > ResponsiveGrid has a fixed column[1] width of 512 and a fixed row[1] height of 512.
 
 > BaseGrid has a fixed row[0] height of 64.
+
+> The buttons and grids (ButtonGrid, OperationsGrid) are anonymous components. These cannot be referenced from the backing code.
