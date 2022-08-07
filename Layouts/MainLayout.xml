@@ -11,10 +11,10 @@
     <Setter Name='ActivatedColor' Value='#883' />
     <Setter Name='FontSize' Value='24' />
   </Style>
-  <Style Name='Style_ClearButton' Target='Button' From='Style_DefaultButton'>
+  <Style Name='Style_ClearButton' Target='Button'>
     <Setter Name='BackColor' Value='#ff9d94' />
   </Style>
-  <Style Name='Style_EvalButton' Target='Button' From='Style_DefaultButton'>
+  <Style Name='Style_EvalButton' Target='Button'>
     <Setter Name='BackColor' Value='#fcae60' />
     <Setter Name='FontSize' Value='32' />
   </Style>
