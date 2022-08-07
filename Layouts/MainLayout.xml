@@ -34,68 +34,68 @@
           <!-- Operators Group -->
           <Grid GridColumnSpan='4' ColumnCount='4'>
             <Button GridColumn='0' Text='+'>
-              <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+              <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
             </Button>
             <Button GridColumn='1' Text='-'>
-              <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+              <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
             </Button>
             <Button GridColumn='2' Text='*'>
-              <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+              <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
             </Button>
             <Button GridColumn='3' Text='/'>
-              <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+              <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
             </Button>
           </Grid>
 
           <!-- Number Buttons -->
           <Button GridRow='1' GridColumn='2' Text='9'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='1' GridColumn='1' Text='8'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='1' GridColumn='0' Text='7'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='2' GridColumn='2' Text='6'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='2' GridColumn='1' Text='5'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='2' GridColumn='0' Text='4'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='3' GridColumn='2' Text='3'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='3' GridColumn='1' Text='2'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='3' GridColumn='0' Text='1'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='4' GridColumn='1' Text='0'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
 
           <!-- Action Buttons -->
           <Button GridRow='4' GridColumn='0' Text='CLR' Style='Style_ClearButton'>
-            <Event Name='OnClick' Handler='ButtonClear_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonClear_OnClick' />
           </Button>
           <Button GridRow='3' GridColumn='3' GridRowSpan='2' Text='=' Style='Style_EvalButton'>
-            <Event Name='OnClick' Handler='ButtonEval_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonEval_OnClick' />
           </Button>
 
           <!-- Special Buttons -->
           <Button GridRow='1' GridColumn='3' Text='('>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='2' GridColumn='3' Text=')'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
           <Button GridRow='4' GridColumn='2' Text='.'>
-            <Event Name='OnClick' Handler='ButtonAddText_OnClick' />
+            <Event Name='OnRelease' Handler='ButtonAddText_OnClick' />
           </Button>
         </Grid>
       </Grid>
