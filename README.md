@@ -18,14 +18,14 @@ Written as a sample Cerulean UI app to demonstrate Layouts, Styles, Grids, Panel
    ```bash
    git clone https://github.com/Xapier14/Calculator.git --recurse-submodules
    ```
-2. Change into the project directory and build the XMLs.
+2. Change into the project directory and build using the CLI tool.
    ```bash
    cd Calculator
-   crn build-xml
+   crn build
    ```
-3. Build and run the .NET C# project
+3. Run the CeruleanUI project.
    ```bash
-   dotnet run
+   crn run
    ```
 
 ## Layout Tree
