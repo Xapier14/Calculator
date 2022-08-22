@@ -5,6 +5,6 @@ var callback = (CeruleanAPI ceruleanApi) => {
 var ceruleanApi = CeruleanAPI.GetAPI()
                              .UseSDL2Graphics()
                              .UseConsoleLogger()
-                             .Initialize(callback);
+                             .Initialize(callback, true, true);
 
 ceruleanApi.WaitForAllWindowsClosed(true);
