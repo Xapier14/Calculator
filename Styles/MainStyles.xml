@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CeruleanXML xmlns:a='Attribute' Scope='MainStyles'>
+  <!-- Style for number buttons -->
+  <Style Name='Style_DefaultButton' Target='Button' ApplyToChildren='true'>
+    <Setter Name='ForeColor' Value='#000' />
+    <Setter Name='BackColor' Value='#AAA' />
+    <Setter Name='BorderColor' Value='#000' />
+    <Setter Name='HighlightColor' Value='#BB6' />
+    <Setter Name='ActivatedColor' Value='#883' />
+    <Setter Name='FontSize' Value='24' />
+  </Style>
+  <!-- Style for action buttons -->
+  <Style Name='Style_ClearButton' Target='Button'>
+    <Setter Name='BackColor' Value='#ff9d94' />
+  </Style>
+  <Style Name='Style_EvalButton' Target='Button'>
+    <Setter Name='BackColor' Value='#fcae60' />
+    <Setter Name='FontSize' Value='32' />
+  </Style>
+</CeruleanXML>
